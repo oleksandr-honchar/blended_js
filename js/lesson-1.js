@@ -112,7 +112,7 @@ if (login === "Адмін") {
   } else {
     alert("Невірний пароль!");
   }
-} else if (login === "" || login === null) {
+} else if (!login) {
   alert("Скасовано");
 } else {
   alert("Я вас не знаю");
@@ -123,8 +123,7 @@ if (login === "Адмін") {
 let i = 0;
 
 while (i <= 20) {
-  console.log(i);
-  i++;
+  console.log(i++);
 }
 
 // Напишіть функцію getNumbers(min, max), що приймає 2 параметри -
